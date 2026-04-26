@@ -1,6 +1,6 @@
 site:
-  name: Sampe.xyz
-  site: 'https://sampe.xyz'
+  name: AstroWind
+  site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Sampe.xyz
-    template: 'Sampe.xyz'
-  description: "Sampe Staking operates an expanding range of non-custodial validation services for Proof-of-Stake blockchains. Our goal is to empower stakers to earn potential rewards on their digital assets through the respective blockchain protocol mechanism. Our validation services are managed by a team of highly-experienced SRE professionals with over 30 years of cumilative systems engineering and IP networking experience. Deep technical expertise and experience working on mission-critical infrastructure in top Silicon Valley tech companies allows us to maintain high availability and security of our advanced blockchain infrastructure and remain on the cutting edge of blockchain ecosystem development, We were awarded AA-rating by Staking Rewards after being audited for reliability, security and credibility."
+    default: AstroWind
+    template: '%s — AstroWind'
+  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Sampe.xyz
+    site_name: AstroWind
     images:
       - url: '~/assets/images/default.png'
         width: 1200
