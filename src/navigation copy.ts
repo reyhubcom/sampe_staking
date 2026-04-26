@@ -3,22 +3,22 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Staking',
+      text: 'Homes',
       links: [
         {
-          text: 'Bitcoin Staking',
-          href: getPermalink('/home/bitcoin'),
+          text: 'SaaS',
+          href: getPermalink('/homes/saas'),
         },
         {
-          text: 'Stake { ETH }',
+          text: 'Startup',
           href: getPermalink('/homes/startup'),
         },
         {
-          text: 'Stake { SOL }',
+          text: 'Mobile App',
           href: getPermalink('/homes/mobile-app'),
         },
         {
-          text: 'Stake { MON }',
+          text: 'Personal',
           href: getPermalink('/homes/personal'),
         },
       ],
@@ -174,9 +174,9 @@ export const footerData = {
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="#"> Rey</a> · 2026 Sampe.xyz All Rights Reserved.
+    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
   `,
 };
