@@ -1,0 +1,202 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+const metadata = {
+  title: 'Tangem Wallet',
+};
+---
+
+<Layout metadata={metadata}>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69869f959f2c494e4434ec76&product=sop' async='async'></script>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Buy Tangem',
+          href: 'https://tangem.com/invite/EW8JGT',
+        },
+        {
+          variant: 'primary',
+          text: 'Get a $10',
+          href: 'https://tangem.com/invite/EW8JGT',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline=" "
+    actions={[
+      { text: 'primary', target: ' _blank', text: 'Geta.$10', href: 'https://tangem.com/invite/EW8JGT' },
+     { text: 'primary', target: ' _blank', text: 'Buy.Tangem', href: 'https://tangem.com/invite/EW8JGT' },
+      { text: 'Exchange', href: '/home/exchange' },
+     { text: 'primary', target: ' _blank', text: 'BTC.Bridge', href: 'https://tangem.com/invite/EW8JGT' },
+    ]}
+    image={{
+      src: 'https://imglink.cc/cdn/HiCcHPTRw8.png',
+      alt: 'Tangem Wallet',
+    }}
+  >
+    <Fragment slot="title">
+     <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSD/?exchange=COINBASE" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a><span class="trademark"></span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  {
+  "lineWidth": 2,
+  "lineType": 0,
+  "chartType": "area",
+  "fontColor": "rgb(106, 109, 120)",
+  "gridLineColor": "rgba(255, 255, 255, 0.06)",
+  "volumeUpColor": "rgba(34, 171, 148, 0.5)",
+  "volumeDownColor": "rgba(247, 82, 95, 0.5)",
+  "backgroundColor": "rgba(4, 4, 34, 1)",
+  "widgetFontColor": "rgba(255, 255, 255, 1)",
+  "upColor": "#22ab94",
+  "downColor": "#f7525f",
+  "borderUpColor": "#22ab94",
+  "borderDownColor": "#f7525f",
+  "wickUpColor": "#22ab94",
+  "wickDownColor": "#f7525f",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en",
+  "chartOnly": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "symbols": [
+    [
+      "COINBASE:BTCUSD|1M"
+    ]
+  ],
+  "dateRanges": [
+    "1d|1",
+    "1m|30",
+    "3m|60",
+    "12m|1D",
+    "60m|1W",
+    "all|1M"
+  ],
+  "fontSize": "10",
+  "headerFontSize": "medium",
+  "autosize": false,
+  "width": "100%",
+  "height": "500",
+  "noTimeScale": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+      
+    </Fragment>
+  </Hero2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="Hardware Warranty"
+    subtitle="Your Tangem hardware wallet can last for at least 25 years with proper care. Its unitary design ensures the chip remains functional, even in extreme conditions."
+    columns={2}
+    items={[
+      {
+        title: 'True Ownership',
+        description:
+          'No Bank or Exchange Stands Between You and Funds. The Tangem Cold Wallet is Full Non-Custodial, No Company, Bank, or Restrict Your Asset, Only You Hold The Keys.',
+        icon: 'tabler:layers-union',
+      },
+      {
+        title: 'Easy to Use',
+        description: `Activate it in 2 minutes and manage your crypto with a single tap. Setup is quick thanks to a simplified private key generation and storage process. Just tapping the card to your phone is enogh to sign transaction or make change to the wallets setting.`,
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Seedless by Design',
+        description:
+          'Validators play a pivotal role in Proof-of-Stake networks, validating transactions and upholding network integrity. Choosing us means trusting a verified staking provider with a proven track record of reliability and professionalism.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'Always Ready',
+        description:
+          'Staking rewards are typically generated from two sources: 1) Transaction fees: network users pay fees for transactions, which are distributed as rewards. 2) Inflation: some blockchain networks create new tokens to distribute as staking rewards. This incentivizes participation and ensures network security.',
+        icon: 'tabler:layers-union',
+      },
+      {
+        title: 'What the risks associated with staking?',
+        description: `WWhile staking can be highly rewarding, it does have risks including network failures, system hacks, and market volatility. To mitigate potential slashing risks, Stakely offers a comprehensive Staking Insurance Program to protect your investments and provide peace of mind.`,
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'How can i start staking with ponco?',
+        description:
+          'Getting started is easy! Our platform guides you through the staking process step by step, helping you make informed decisions with educational tutorials and blog articles. You can also reach out to our support team for personalized assistance..',
+        icon: 'tabler:writing',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title="Crypto security at its peak"
+    subtitle="Every Tangem Wallet contains a powerful, certified microchip developed with Samsung Semiconductors."
+    isReversed
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Manage your assets, explore services, and unlock new possibilities with the Tangem app.',
+      },
+      {
+        title: 'Benefits:',
+        description: `Earn Rewards by Staking Your Assets, Acces Thousands of dApps With Real-Time Security.`,
+      },
+    ]}
+    image={{
+      src: 'https://imglink.cc/cdn/gtJ3lA4USE.png',
+      alt: 'Startup Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+       More than just a cold wallet <br /><span class="text-2xl">Everything you need</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "d411df23-8647-4330-83fb-06b07bf8c114"
+  });
+</script>
+</Layout>
