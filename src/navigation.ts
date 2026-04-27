@@ -115,7 +115,7 @@ export const headerData = {
       href: '/home/BUY',
     },
   ],
-  actions: [{ text: 'Exchange', href: '/home/exchange', target: '' }],
+  actions: [{ text: 'EXCHANGE', href: '/home/exchange', target: '' }],
 };
 
 export const footerData = {
