@@ -111,11 +111,11 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Wallet',
+      href: '/home/BUY',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
+  actions: [{ text: 'Exchange', href: '/home/exchange', target: '' }],
 };
 
 export const footerData = {
