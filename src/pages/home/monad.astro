@@ -13,25 +13,25 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import Pricing from '~/components/widgets/Pricing.astro';
 const metadata = {
-  title: 'Monad Staking',
+  title: 'Bitcoin Staking',
 };
 ---
 
 <Layout metadata={metadata}>
-    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69869f959f2c494e4434ec76&product=sop' async='async'></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69eeab47281443f8fa970a01&product=sop' async='async'></script>
   <Fragment slot="header">
     <Header
       {...headerData}
       actions={[
         {
           variant: 'secondary',
-          text: 'Exchange',
+          text: 'EXCHANGE',
           href: '/home/exchange',
         },
         {
           variant: 'primary',
-          text: 'Stake MON',
-          href: '/stake/MON',
+          text: 'Stake BTC',
+          href: '/stake/BTC',
         },
       ]}
       isSticky
@@ -43,73 +43,72 @@ const metadata = {
   <Hero2
     tagline=""
     actions={[
-      { text: 'primary', target: '', text: 'Stake.MON', href: '/stake/MON' },
+      { variant: 'primary', target: '', text: 'Stake.SOL', href: '/stake/BTC' },
       { text: 'Exchange', href: '/home/exchange' },
-      { text: 'primary', target: '_blank', text: 'MON.Bridge', href: 'https://monadbridge.com' },
-      { text: 'primary', target: '_blank', text: 'BUY.Wallet', href: '/home/BUY' },
+       { text: 'Bridge.SOL', href: 'https://symbiosis.finance/bridge-btc/eth' },
+        { text: 'BUY.Wallet', href: '/home/BUY' },
     ]}
     image={{
-      src: 'https://imglink.cc/cdn/nqBxYi4JeM.png',
-      alt: 'Monad Staking',
+      src: 'https://imglink.cc/cdn/sM0yNNOXHp.png',
+      alt: 'AstroWind Hero Image',
     }}
   >
     <Fragment slot="title">
-     <!-- TradingView Widget BEGIN -->
+      
+   <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/MONUSD/?exchange=COINBASE" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a><span class="trademark"></span></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a><span class="trademark"> </span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
   {
-  "lineWidth": 2,
-  "lineType": 0,
-  "chartType": "area",
-  "fontColor": "rgb(106, 109, 120)",
-  "gridLineColor": "rgba(255, 255, 255, 0.06)",
-  "volumeUpColor": "rgba(34, 171, 148, 0.5)",
-  "volumeDownColor": "rgba(247, 82, 95, 0.5)",
-  "backgroundColor": "rgba(4, 4, 34, 1)",
-  "widgetFontColor": "rgba(255, 255, 255, 1)",
-  "upColor": "#22ab94",
-  "downColor": "#f7525f",
-  "borderUpColor": "#22ab94",
-  "borderDownColor": "#f7525f",
-  "wickUpColor": "#22ab94",
-  "wickDownColor": "#f7525f",
   "colorTheme": "dark",
-  "isTransparent": true,
+  "dateRange": "1D",
   "locale": "en",
-  "chartOnly": false,
-  "scalePosition": "right",
-  "scaleMode": "Normal",
-  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-  "valuesTracking": "1",
-  "changeMode": "price-and-percent",
-  "symbols": [
-    [
-      "COINBASE:MONUSD|1M"
-    ]
+  "largeChartUrl": "",
+  "isTransparent": true,
+  "showFloatingTooltip": false,
+  "plotLineColorGrowing": "rgba(34, 171, 148, 1)",
+  "plotLineColorFalling": "rgba(178, 40, 51, 1)",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "scaleFontColor": "rgba(255, 255, 255, 1)",
+  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+  "symbolActiveColor": "rgba(41, 98, 255, 0)",
+  "tabs": [
+    {
+      "title": "Solana Staking",
+      "symbols": [
+        {
+          "s": "COINBASE:SOLUSD",
+          "d": "",
+          "base-currency-logoid": "crypto/XTVCSOL",
+          "currency-logoid": "country/US"
+        }
+      ],
+      "originalTitle": "Indices"
+    }
   ],
-  "dateRanges": [
-    "1d|1",
-    "1m|30",
-    "3m|60",
-    "12m|1D",
-    "60m|1W",
-    "all|1M"
-  ],
-  "fontSize": "10",
-  "headerFontSize": "medium",
-  "autosize": false,
+  "support_host": "https://www.tradingview.com",
+  "backgroundColor": "#0f0f0f",
   "width": "100%",
-  "height": "480",
-  "noTimeScale": false,
-  "hideDateRanges": false,
-  "hideMarketStatus": false,
-  "hideSymbolLogo": false
+  "height": "300",
+  "showSymbolLogo": true,
+  "showChart": true
 }
   </script>
 </div>
 <!-- TradingView Widget END -->
+       <br />  <span class="text-accent dark:text-white">Solana</span> Staking<br
+      />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Solana is a public and high-throughput layer-1 <span class="font-semibold"> blockchain platform with smart contract functionality. </span> Its native cryptocurrency is SOL.</span
+      >
+    This open-source project was launched in 2017 and is currently run by the Solana Foundation based in Geneva.
     </Fragment>
   </Hero2>
 
@@ -150,7 +149,7 @@ const metadata = {
         icon: 'tabler:artboard',
       },
       {
-        title: 'How can i start staking with sampe?',
+        title: 'How can i start staking with ponco?',
         description:
           'Getting started is easy! Our platform guides you through the staking process step by step, helping you make informed decisions with educational tutorials and blog articles. You can also reach out to our support team for personalized assistance..',
         icon: 'tabler:writing',
@@ -161,8 +160,8 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-    title="Deep dive on MON staking"
-    subtitle="By staking your Monad with Patih, you can put your assets to work, receive rewards, and actively contribute to the growth and security of the Bitcoin ecosystem."
+    title="Deep dive on BTC staking"
+    subtitle="By staking your Bitcoin with sampe, you can put your assets to work, receive rewards, and actively contribute to the growth and security of the Bitcoin ecosystem."
     isReversed
     items={[
       {
@@ -172,12 +171,12 @@ const metadata = {
       },
       {
         title: 'Benefits:',
-        description: `At Ponco, we've handpicked the most promising projects and are working on integrations with leading custodians to support our institutional customers.`,
+        description: `At Sampe, we've handpicked the most promising projects and are working on integrations with leading custodians to support our institutional customers.`,
       },
     ]}
     image={{
-      src: 'https://imglink.cc/cdn/V9XnXQxaY4.jpg',
-      alt: 'Monad Staking',
+      src: 'https://image2url.com/r2/bucket3/images/1775956175369-988e71e9-6711-44aa-ab04-05fe0ad49e45.png',
+      alt: 'Startup Image',
     }}
   >
     <Fragment slot="content">
